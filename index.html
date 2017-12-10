@@ -11,25 +11,38 @@
   <body>
     <h1>UI Challenge - Custom Form Elements</h1>
     <form>
-      <label for="text">Text Input</label>
+      <h2>Text Input</h2>
       <input name="text" type="text" required>
-      <label for="select" >Select Box</label>
-      <select name="select" placeholder="please select an option...">
-        <option class="odd" value="option_one">Option 1</option>
-        <option class="even" value="option_two">Option 2</option>
-        <option class="odd" value="option_three">Option 3</option>
-        <option class="even" value="option_four">Option 4</option>
-        <option class="odd" value="option_five">Option 5</option>
-      </select>
-      <label for="check">Checkbox</label>
-      <input name="check" type="checkbox">
-      <input name="check" type="checkbox">
-      <label for="radio">Radio</label>
-      <input name="radio" type="radio">
-      <input name="radio" type="radio">
-      <label for="button">Buttons</label>
-      <button name="button" type="submit">Submit</button>
-      <button name="button" type="submit">Submit</button>
+      <h2>Select Box</h2>
+      <div class="selectbox">
+        <input type="text" id="select" placeholder="please select an option..." readonly>
+        <ul>
+          <li class="odd" value="option_one">Option 1</li>
+          <li class="even" value="option_two">Option 2</li>
+          <li class="odd" value="option_three">Option 3</li>
+          <li class="even" value="option_four">Option 4</li>
+          <li class="odd" value="option_five">Option 5</li>
+        </ul>
+        </select>
+        <label for="select"><span></span></label>
+      </div>
+      <div>
+        <h2>Checkbox</h2>
+        <input name="check" id="c1" type="checkbox">
+        <label for="c1"><span></span></label>
+        <input name="check" id="c2" type="checkbox">
+        <label for="c2"><span></span></label>
+      </div>
+      <div>
+        <h2>Radio</h2>
+        <input name="radio" id="r1" type="radio">
+        <label for="r1"><span></span></label>
+        <input name="radio" id="r2" type="radio">
+        <label for="r2"><span></span></label>
+      </div>
+      <h2>Buttons</h2>
+      <button id="lighter" type="submit">submit</button>
+      <button id="darker"  type="submit">submit</button>
     </form>
   </body>
 </html>

@@ -1,0 +1,88 @@
+
+/* Select Box */
+
+.selectbox {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.selectbox input[type="text"] {
+  height: 100%;
+  border: none;
+  background: transparent;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.selectbox input[type="text"]:focus {
+  outline: none;
+}
+
+ul + label span {
+  display: inline-block;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 75%;
+  right: 5px;
+  background: #fafafa url("../sprites/form-elements-sprite.png") -155px -36px;
+  background-repeat: no-repeat;
+  background-size: 200px;
+}
+
+/* Check Boxes */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span {
+  display: inline-block;
+  width: 158px;
+  height: 158px;
+  background: url("../sprites/form-elements-sprite.png") -160px -240px no-repeat;
+}
+input[type="checkbox"]:checked + label span {
+  background: url("../sprites/form-elements-sprite.png") -382px -240px no-repeat;
+}
+
+/* Radio Buttons */
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  width: 165px;
+  height: 165px;
+  background: url("../sprites/form-elements-sprite.png") -583px -242px no-repeat;
+}
+input[type="radio"]:checked + label span {
+  background: url("../sprites/form-elements-sprite.png") -814px -242px no-repeat;
+}
+
+/* Buttons */
+
+button {
+  width: 175px;
+  height: 65px;
+  border: none;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#darker {
+  background: #403F3F;
+  color: white;
+}
+
+#lighter {
+  background: lightgray;
+  color: #403F3F;
+}
