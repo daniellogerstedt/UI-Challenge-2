@@ -1,21 +1,25 @@
 body {
-  width: 500px;
+  width: 960px;
   margin: 0 auto;
   font-family: sans-serif;
+  font-weight: bold;
 }
 
 form {
-  margin: 20px;
+  width: 800px;
+  margin: 0 auto;
 }
 
-label {
+h2 {
   display: block;
+  font-size: 24px;
 }
 
-label, input, select, button{
+h2, label, input, button{
   margin: 20px;
 }
 
 h1  {
-  font-size: 24px;
+  margin: 0 auto;
+  font-size: 30px;
 }
