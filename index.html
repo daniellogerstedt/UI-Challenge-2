@@ -3,30 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>UI Challenge 2</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/modules.css">
   </head>
   <body>
+    <h1>UI Challenge - Custom Form Elements</h1>
     <form>
-      <label>Text Input
-        <input type="text">
-      </label>
-      <label>Select Box
-        <select placeholder="please select an option...">
-          <option value="option_one">Option 1</option>
-          <option value="option_two">Option 2</option>
-          <option value="option_three">Option 3</option>
-          <option value="option_four">Option 4</option>
-          <option value="option_five">Option 5</option>
-        </select>
-      </label>
-      <label>Checkbox
-        <input type="checkbox">
-        <input type="checkbox">
-      </label>
-      <label>Radio
-        <input type="radio">
-        <input type="radio">
-      </label>Buttons
-      <button type="submit">Submit</button>
+      <label for="text">Text Input</label>
+      <input name="text" type="text" required>
+      <label for="select" >Select Box</label>
+      <select name="select" placeholder="please select an option...">
+        <option class="odd" value="option_one">Option 1</option>
+        <option class="even" value="option_two">Option 2</option>
+        <option class="odd" value="option_three">Option 3</option>
+        <option class="even" value="option_four">Option 4</option>
+        <option class="odd" value="option_five">Option 5</option>
+      </select>
+      <label for="check">Checkbox</label>
+      <input name="check" type="checkbox">
+      <input name="check" type="checkbox">
+      <label for="radio">Radio</label>
+      <input name="radio" type="radio">
+      <input name="radio" type="radio">
+      <label for="button">Buttons</label>
+      <button name="button" type="submit">Submit</button>
+      <button name="button" type="submit">Submit</button>
     </form>
   </body>
 </html>
